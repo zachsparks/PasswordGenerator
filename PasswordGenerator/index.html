@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Password Generator</title>
+    <script src="password.js"></script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div id="password-generator">
+    <h1>Password Generator</h1>
+    <p>Your generated password is: <strong><span id="password"></span></strong></p>
+    <p><button onclick="window.location.reload()">Generate New Password</button></p>
+    </div>
+    <script>
+      // Generate a random password and display it on the page
+      var password = generatePassword();
+      document.getElementById("password").innerHTML = password;
+    </script>
+  </body>
+</html>
+
